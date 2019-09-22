@@ -1,3 +1,5 @@
 node_modules
 package-lock.json
-assets/OnePunchMan.mp4
+assets/video.mp4
+.cache
+dist
