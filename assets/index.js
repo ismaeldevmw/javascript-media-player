@@ -13,4 +13,9 @@ const player = new MediaPlayer({
 
 buttonPlay.onclick = () => player.togglePlay();
 buttonMute.onclick = () => player.toggleMute();
-// button.onclick = () => video.play();
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js').catch(error => {
+    console.log(error.message);
+  });
+}
