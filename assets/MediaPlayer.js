@@ -19,7 +19,7 @@ MediaPlayer.prototype._initPlugins = function() {
 		}
 	}
 	this.plugins.forEach(plugin => {
-		plugin.run(this)
+		plugin.run(player)
 	})
 }
 
